@@ -1,6 +1,6 @@
 import './style.css'
-
-import * as THREE from './node_modules/three';
+//app.use('/build/three.module.js', express.static(path.join(__dirname, '../../node_modules/three/build/three.module.js')));
+import * as THREE from 'three';
 import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls';
 
