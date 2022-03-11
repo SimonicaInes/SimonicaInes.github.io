@@ -1,8 +1,8 @@
 import './style.css'
 
 import * as THREE from '../SimonicaInes.github.io/node_modules/three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from '../SimonicaInes.github.io/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from '../SimonicaInes.github.io/node_modules/three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
 
