@@ -1,0 +1,142 @@
+html,body {
+  width: 100vw;
+  height: 100vh;  
+  margin:0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.pages{
+  width: 100vw;
+  height: 100vh;  
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 228, 228);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 1;
+}   
+
+#page1{
+  background-color: rgb(19, 19, 19);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+  
+}
+#page2{
+  /* background-color: rgb(197, 96, 96); */
+  background-blend-mode: overlay;
+  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(184, 9, 9, 0.685) 3%, rgb(255, 174, 0));
+
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+#page3{
+  background-blend-mode: overlay;
+  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(251, 201, 0, 0.835) 3%, rgba(66, 180, 0, 0.726));
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+#page4{
+  background-blend-mode: overlay;
+  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(58, 255, 196, 0.685) 3%, rgb(0, 19, 124));
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+#page5{
+  background-blend-mode: overlay;
+  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(3, 0, 204, 0.76) 3%, rgba(72, 0, 167, 0.582));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+#page6{
+  background-blend-mode: overlay;
+  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(111, 0, 255, 0.733) 3%, rgba(100, 5, 5, 0.582));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+h1{
+  color:#e5e5e5;
+  font-family: monospace;
+  text-align: center;
+}
+
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.arrows{
+  position: absolute;
+  background-color: transparent;
+  top: 84%;
+  width: 80px;
+  height: 80px;
+  filter:invert() brightness(100%) opacity(50%);
+  animation-name: pointDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes pointDown {
+  0%  {top:84%; }
+  50% {top: 87%;}
+  100% {top:84%;}
+}
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main{
+  position: absolute;
+}
