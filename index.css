@@ -49,7 +49,8 @@ main{
 #page2{
   /* background-color: rgb(197, 96, 96); */
   background-blend-mode: overlay;
-  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(184, 9, 9, 0.685) 3%, rgb(255, 174, 0));
+  background-image: url("https://drive.google.com/uc?export=view&id=1fYsK6CY0nxSxj4vE4WD9vCtlMtWaJdfH"), 
+                    linear-gradient(to right, rgba(184, 9, 9, 0.685) 3%, rgb(255, 174, 0));
 
   object-fit: cover;
   width: 100vw;
@@ -63,7 +64,8 @@ main{
 
 #page3{
   background-blend-mode: overlay;
-  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(251, 201, 0, 0.835) 3%, rgba(66, 180, 0, 0.726));
+  background-image: url("https://drive.google.com/uc?export=view&id=1fYsK6CY0nxSxj4vE4WD9vCtlMtWaJdfH"), 
+                    linear-gradient(to right, rgba(251, 201, 0, 0.835) 3%, rgba(66, 180, 0, 0.726));
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -75,7 +77,8 @@ main{
 }
 #page4{
   background-blend-mode: overlay;
-  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(58, 255, 196, 0.685) 3%, rgb(0, 19, 124));
+  background-image: url("https://drive.google.com/uc?export=view&id=1fYsK6CY0nxSxj4vE4WD9vCtlMtWaJdfH"),
+                    linear-gradient(to right, rgba(58, 255, 196, 0.685) 3%, rgb(0, 19, 124));
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -87,7 +90,8 @@ main{
 }
 #page5{
   background-blend-mode: overlay;
-  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(3, 0, 204, 0.76) 3%, rgba(72, 0, 167, 0.582));
+  background-image: url("https://drive.google.com/uc?export=view&id=1fYsK6CY0nxSxj4vE4WD9vCtlMtWaJdfH"), 
+                    linear-gradient(to right, rgba(3, 0, 204, 0.76) 3%, rgba(72, 0, 167, 0.582));
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -98,7 +102,8 @@ main{
 }
 #page6{
   background-blend-mode: overlay;
-  background-image: url("../public/images/cb.png"), linear-gradient(to right, rgba(111, 0, 255, 0.733) 3%, rgba(100, 5, 5, 0.582));
+  background-image: url("https://drive.google.com/uc?export=view&id=1fYsK6CY0nxSxj4vE4WD9vCtlMtWaJdfH"), 
+                    linear-gradient(to right, rgba(111, 0, 255, 0.733) 3%, rgba(100, 5, 5, 0.582));
   width: 100vw;
   height: 100vh;
   display: flex;

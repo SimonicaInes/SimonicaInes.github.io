@@ -1,7 +1,7 @@
 // import './index.css'
 
 import * as THREE from 'three'
-import { CubeCamera } from 'three'
+
 
 
 
@@ -19,23 +19,24 @@ camera.position.y = 10
 
 
 //GEOMETRY ADDING
-// const geometry = new THREE.BoxGeometry(5,5,5,100)
-// const material = new THREE.MeshStandardMaterial({color:0x002050})
-// const cube = new THREE.Mesh(geometry,material)
-
-// scene.add(cube);
+const geometry = new THREE.BoxGeometry(5,5,5,100)
+const material = new THREE.MeshStandardMaterial({color:0x002050})
+const cube = new THREE.Mesh(geometry,material)
+cube.position.setX(20)
+cube.position.setZ(101)
+scene.add(cube);
 
 
 // const geometryF = new THREE.BoxGeometry(5,5,5,100)
 // const materialF = new THREE.MeshStandardMaterial({color:0x002050})
 // const cubeF = new THREE.Mesh(geometryF,materialF)
 // scene.add(cubeF)
-// cubeF.position.setX(20)
-// cubeF.position.setZ(101)
+
 //END GEOMETRY
 
 const light = new THREE.AmbientLight(0xFFFFFF)
-scene.add(light);
+const pointlight = new THREE.PointLight(0xFFFFFF,10)
+scene.add(pointlight,light);
 
 
 const renderer = new THREE.WebGLRenderer({
