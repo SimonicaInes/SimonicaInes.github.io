@@ -12,7 +12,8 @@
     <script type="importmap" defer>
         {
             "imports": {
-                "three": "./node_modules/three/build/three.module.js"
+                "three": "./node_modules/three/build/three.module.js",
+                "loader": "./node_modules/three/examples/jsm/loaders/GLTFLoader.js"
             }
         }
     </script>
@@ -21,57 +22,88 @@
 
 <body>
     
-    
-    <main>  
-        
-        <div class="pages">
-            <canvas id="bg"></canvas>
-            <div id="page1">
-                <video playsinline autoplay muted loop poster>
-                    <source src="https://drive.google.com/uc?export=view&id=1UWsWs07U_OxV48wYcMrps4zLAVcOLkqa" type="video/webm">
-    
-                </video>
-                <a href="#page2" class="arrows">
-                    <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
-                </a>
+    <div class="pages">
+
+        <div id="page1">
+            <div class="frame">
+                <div class="frameTOP"></div>
+                <div class="frameBOTTOM"></div>
+                <div class="frameLEFT"></div>
+                <div class="frameRIGHT"></div>
+                <div class="frameMID"></div>
             </div>
-    
-            <div id="page2">
-                <h1>PAGE 2</h1>
-                <a href="#page3" class="arrows">
-                    <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
-                </a>
-            </div>
-    
-            <div id="page3">
-                <h1>PAGE 3</h1>
-                <a href="#page4" class="arrows">
-                    <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
-                </a>
-            </div>
-    
-            <div id="page4">
-                <h1>PAGE 4</h1>
-                <a href="#page5" class="arrows">
-                    <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
-                </a>
-            </div>
-    
-            <div id="page5">
-                <h1>PAGE 5</h1>
-                <a href="#page6" class="arrows">
-                    <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
-                </a>
-            </div>
-    
-            <div id="page6">
-                <h1>PAGE 6</h1>
-            </div>
+            <video playsinline autoplay muted loop poster>
+                <source src="https://drive.google.com/uc?export=view&id=1UWsWs07U_OxV48wYcMrps4zLAVcOLkqa" type="video/webm">
+            </video>
+            
+            <a href="#page2" class="arrows">
+                <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
+            </a>
         </div>
+
+        <div id="page2">
+            <div class = "boxTall">
+                <div class = "boxSmall">
+                    <h1>Education</h1>
+                </div>
+                <img class = "image" src="./images/utcn.png">
+                <div class = "description">
+                    <h1>Computer Science Engineer</h1>
+                </div>
+            </div>
+            <div class = "boxTall">
+                <div class = "boxSmall">
+                    <h1>Work Experience</h1>
+                </div>              
+                <img class = "image2" src="./images/bosch.png">
+                <div class = "description">
+                    <h1>Programmer Assistant</h1>
+                </div>
+            </div>
+            <a href="#page3" class="arrows">
+                <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
+            </a>
+        </div>
+
+        <div id="page3">
+            <h1>Gallery</h1>
+            <div id="work-container"></div>
+
+
+
+            <a href="#page4" class="arrows">
+                <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
+            </a>
+        </div>
+
+        <div id="page4">
+            <div class="contactCard">
+                <h2>Contact</h2>
+                <div class="Cardrow">
+                    <a href="https://www.linkedin.com/in/ines-simonica-1b9222217/">
+                        <img class ="IconSVG" src="./images/linkedin.svg">
+                   </a>
+                    <img class ="IconSVG" src="./images/gmail.svg">
+                    <h2>simonica.ines@gmail.com</h2>
+                </div>
+
+               
+            </div>
+           
+        </div>
+<!-- 
+        <div id="page5">
+            <h1>PAGE 5</h1>
+            <a href="#page6" class="arrows">
+                <img src="https://drive.google.com/uc?export=view&id=1KhL219tiS_zPNOoqIGEd-HsiT0o7kmr0">
+            </a>
+        </div>
+
+        <div id="page6">
+            <h1>PAGE 6</h1>
+        </div> -->
+    </div>
       
-    </main>
-    
-    
 </body>
 
 </html>
